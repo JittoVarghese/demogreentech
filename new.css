@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins","Lato","Roboto","Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar-container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    background-color: aqua;
+    padding:0;
+}
+.logo{
+    position: relative;
+    top:-5px;
+    left:0;
+    width:100px;
+    height:90px;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    max-width: 1200px;
+    background-image: url('./Assets/hero.webp');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.walkthrough-container{
+    height:100vh;
+    width:100%;
+    max-width: 1500px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:100px 50px;
+    gap:30px;
+
+}
+.location-heading{
+  font-family: "poppins";
+  font-size:100px;
+  color:#82988A;
+  line-height: 120px;
+}
+.location-description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  flex-wrap: wrap;
+}
+.description{
+  font-family: "Roboto";
+  font-size:20px;
+  font-weight: 100;
+  color:#82988A;
+  line-height: 25px;
+  text-align: center;
+
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 500px; /* 🔥 Important */
+}
+
+/* Make video fill wrapper */
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover; /* prevents distortion */
+  display: block;
+}
+
+/* Blue overlay */
+.video-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+/* Play button */
+.control-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+}
+.floorplanwrapper{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.floorplans{
+  width:45%;
+  height:500px;
+}
